@@ -198,6 +198,7 @@ p{margin:0}
 .regalo .ancho{display:grid;gap:1.2rem;align-items:center}
 .regalo h2{font-size:clamp(1.8rem,5.4vw,2.7rem)}
 .regalo p{margin-top:.6rem;color:var(--gris)}
+.regalo .form-regalo{margin-top:0;padding:clamp(20px,3vw,28px);border-radius:22px;background:var(--blanco);box-shadow:0 0 0 1px var(--veta)}
 
 /* turnos */
 .turnos-grilla{display:grid;gap:28px}
@@ -246,7 +247,6 @@ p{margin:0}
   .trabajos{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}
   .opiniones{grid-template-columns:1fr 1fr}
   .form-turno .dos{grid-template-columns:1fr 1fr}
-  .regalo .ancho{grid-template-columns:1fr auto;gap:2rem}
 }
 @media (min-width:960px){
   .menu{display:flex}
@@ -266,6 +266,7 @@ p{margin:0}
   .foto-espejo{display:block}
   .salon-grilla{grid-template-columns:.8fr 1.2fr;gap:64px}
   .turnos-grilla{grid-template-columns:1.15fr .85fr;gap:48px}
+  .regalo .ancho{grid-template-columns:.8fr 1.2fr;gap:56px}
   .pie .ancho{grid-template-columns:1.2fr 1fr 1fr}
   .pie{padding-bottom:52px}
 }
@@ -469,9 +470,19 @@ p{margin:0}
   <div class="ancho">
     <div>
       <h2 id="t-regalo">Regalá un momento Lusoan</h2>
-      <p>Gift cards para cualquier servicio, armadas a tu medida. Pedila en el salón o por WhatsApp.</p>
+      <p>Gift cards para cualquier servicio, armadas a tu medida. Elegí qué querés regalar y te la preparamos por WhatsApp.</p>
     </div>
-    <a class="boton" href="#" data-mensaje="Hola! Quiero una gift card de Lusoan." target="_blank" rel="noopener">Pedir una gift card</a>
+    <form class="form-turno form-regalo" data-regalo novalidate>
+      <div class="dos">
+        <div class="campo"><label for="g-que">Qué querés regalar</label><select id="g-que" name="que"></select></div>
+        <div class="campo" data-monto hidden><label for="g-monto">Monto en pesos</label><input id="g-monto" name="monto" type="text" inputmode="numeric" placeholder="Por ejemplo: 50.000"></div>
+      </div>
+      <div class="dos">
+        <div class="campo"><label for="g-para">Para</label><input id="g-para" name="para" type="text" placeholder="Nombre de quien la recibe"></div>
+        <div class="campo"><label for="g-de">De parte de</label><input id="g-de" name="de" type="text" autocomplete="given-name" placeholder="Tu nombre"></div>
+      </div>
+      <div><button class="boton" type="submit">Pedir la gift card</button></div>
+    </form>
   </div>
 </section>
 
@@ -632,6 +643,30 @@ document.querySelectorAll("form[data-turno]").forEach(form => {
     abrir(wa(texto));
   });
 });
+
+/* Gift card: arma el pedido y lo manda por WhatsApp */
+(function () {
+  const form = document.querySelector("form[data-regalo]");
+  if (!form) return;
+  const sel = form.que, campoMonto = form.querySelector("[data-monto]");
+  sel.add(new Option("Que elija en el salón", "que elija en el salón"));
+  sel.add(new Option("Un monto en pesos", "monto"));
+  SERVICIOS.forEach(s => sel.add(new Option(s, s.toLowerCase())));
+  sel.addEventListener("change", () => { campoMonto.hidden = sel.value !== "monto"; });
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    let regalo = sel.value;
+    if (regalo === "monto") {
+      const n = form.monto.value.replace(/\D/g, "");
+      regalo = n ? "$" + Number(n).toLocaleString("es-AR") : "un monto a definir";
+    }
+    const para = form.para.value.trim(), de = form.de.value.trim();
+    let texto = "Hola! Quiero una gift card de Lusoan. Regalo: " + regalo + ".";
+    if (para) texto += " Para: " + para + ".";
+    if (de) texto += " De parte de: " + de + ".";
+    abrir(wa(texto));
+  });
+})();
 
 /* Espejo: rota los trabajos */
 (function () {
