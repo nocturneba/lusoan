@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lusoan Peluquería · Peluquería en Palermo, CABA</title>
+<meta name="description" content="Peluquería en Palermo: corte, color, balayage, tratamientos, uñas, maquillaje y masajes en Raúl Scalabrini Ortiz 3263. Martes a sábado de 9:30 a 19 h. Pedí tu turno por WhatsApp.">
+<meta name="theme-color" content="#2A292B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lusoan Peluquería · Palermo">
+<meta property="og:description" content="Corte, color, tratamientos, uñas y maquillaje en un mismo lugar. Pedí tu turno por WhatsApp.">
+<meta property="og:url" content="https://nocturneba.github.io/lusoan/">
+<meta property="og:image" content="https://nocturneba.github.io/lusoan/img/og.jpg">
+<!-- Demo: sacar el noindex cuando el salón apruebe la web -->
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..500&family=Hanken+Grotesk:wght@400..600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/espejo-1.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Lusoan Peluquería",
+  "url": "https://nocturneba.github.io/lusoan/",
+  "image": "https://nocturneba.github.io/lusoan/img/og.jpg",
+  "telephone": "+5491125386748",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Raúl Scalabrini Ortiz 3263",
+    "addressLocality": "Ciudad Autónoma de Buenos Aires",
+    "addressRegion": "CABA",
+    "postalCode": "C1425",
+    "addressCountry": "AR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -34.5793148, "longitude": -58.4094005 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:30",
+    "closes": "19:00"
+  }],
+  "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJo7_Xl3u1vJURV8JsF72Vqa8",
+  "sameAs": ["https://www.instagram.com/lusoan_peluqueria/"]
+}
+</script>
+<style>
+:root{
+  --carbon:#2A292B; --carbon-hondo:#1F1E20; --carbon-claro:#3A393C;
+  --marmol:#F3F2EF; --veta:#DCD9D4; --plata:#C7C9CC; --roble:#94643E;
+  --tinta:#1C1B1D; --gris:#5C5A5F; --blanco:#FFFFFF; --wa:#1F8F4E;
+  --display:"Archivo",system-ui,sans-serif;
+  --italica:"Bodoni Moda",Georgia,serif;
+  --texto:"Hanken Grotesk",system-ui,sans-serif;
+  --radio:18px; --facil:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--marmol);color:var(--tinta);font:400 1.0625rem/1.6 var(--texto);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--display);font-stretch:118%;font-weight:700;line-height:1.02;letter-spacing:-.015em}
+p{margin:0}
+.it{font-family:var(--italica);font-style:italic;font-weight:400;font-stretch:100%;letter-spacing:0}
+.ancho{width:min(1160px,100% - 32px);margin-inline:auto}
+.oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--roble);outline-offset:3px;border-radius:4px}
+.tramo-oscuro :focus-visible,.portada :focus-visible,.cabecera :focus-visible,.opinar :focus-visible{outline-color:var(--plata)}
+
+/* etiquetas y botones */
+.etiqueta{font:600 .74rem/1 var(--display);font-stretch:112%;letter-spacing:.2em;text-transform:uppercase;color:var(--roble)}
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:0 1.5rem;border:0;border-radius:999px;background:var(--carbon);color:var(--marmol);font:600 1rem/1 var(--texto);text-decoration:none;cursor:pointer;transition:background .2s,transform .2s var(--facil)}
+.boton:hover{background:var(--tinta);transform:translateY(-1px)}
+.boton svg{width:20px;height:20px;flex:none}
+.boton-claro{background:var(--marmol);color:var(--carbon)}
+.boton-claro:hover{background:var(--blanco)}
+.boton-borde{background:transparent;color:var(--carbon);box-shadow:inset 0 0 0 1.5px var(--carbon)}
+.boton-borde:hover{background:var(--carbon);color:var(--marmol)}
+
+/* cabecera */
+.cabecera{position:sticky;top:0;z-index:20;background:var(--carbon);color:var(--marmol);border-bottom:1px solid rgba(199,201,204,.14)}
+.cabecera .ancho{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:68px}
+.logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1}
+.logo-nombre{font:800 1.42rem/1 var(--display);font-stretch:125%;letter-spacing:.03em}
+.logo-bajada{margin-top:.28rem;font:600 .52rem/1 var(--display);font-stretch:118%;letter-spacing:.42em;padding-left:.42em;color:var(--plata)}
+.menu{display:none;gap:2rem}
+.menu a{font-size:.95rem;text-decoration:none;color:rgba(243,242,239,.82)}
+.menu a:hover{color:var(--blanco)}
+.cabecera .boton{min-height:42px;padding:0 1.1rem;font-size:.92rem}
+
+/* portada */
+.portada{background:var(--carbon);color:var(--marmol);overflow:hidden}
+.portada .etiqueta{color:#D3AC86}
+.portada-grilla{display:grid;gap:28px;padding:20px 0 44px}
+.espejo{position:relative;border-radius:26px;padding:10px;background:var(--carbon-claro)}
+.espejo-luz{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,#FCFBF7,#EEEDE8);box-shadow:0 0 0 1px rgba(255,255,255,.55),0 0 28px 4px rgba(255,252,240,.34),0 0 90px 18px rgba(255,252,240,.12)}
+.espejo-vidrio{position:relative;border-radius:17px;overflow:hidden;aspect-ratio:1/.9;background:var(--carbon-hondo)}
+.espejo-vidrio img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%;opacity:0;transition:opacity 1.4s ease}
+.espejo-vidrio img.activa{opacity:1}
+.espejo-vidrio::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(118deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 34%,rgba(255,255,255,0) 72%,rgba(255,255,255,.07) 100%)}
+.portada h1{font-size:clamp(2.45rem,10.4vw,5.1rem);font-weight:720;margin-top:.9rem}
+.portada h1 .it{font-size:1.12em;line-height:.9}
+.portada .bajada{margin-top:1rem;max-width:34rem;color:rgba(243,242,239,.82);font-size:1.08rem}
+.puntaje{display:flex;align-items:center;gap:.5rem;margin-top:1.1rem;font-size:.95rem;color:rgba(243,242,239,.9)}
+.estrellas{color:#E2C08D;letter-spacing:.1em;font-size:.9rem}
+.pedido{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:1.5rem;max-width:36rem}
+.pedido .campo{display:grid;gap:.35rem}
+.pedido label{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--plata)}
+.pedido select{width:100%;min-width:0;height:50px;padding:0 2.2rem 0 .9rem;border-radius:12px;border:1px solid rgba(199,201,204,.3);background:var(--carbon-claro) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23C7C9CC' stroke-width='1.6'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") no-repeat right .9rem center;color:var(--marmol);font:500 1rem var(--texto);appearance:none}
+.pedido .boton{grid-column:1/-1;margin-top:4px}
+.pedido .error{grid-column:1/-1;min-height:1.2em;font-size:.9rem;color:#F0B9A8}
+.nota{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .6rem;margin-top:.5rem;font-size:.9rem;color:rgba(243,242,239,.62)}
+.estado{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;color:var(--marmol)}
+.estado::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:#8E8C91}
+.estado.abierto::before{background:#5FC28A;box-shadow:0 0 0 3px rgba(95,194,138,.22)}
+.nota .estado::after{content:"·";margin-left:.1rem;font-weight:400;color:rgba(243,242,239,.62)}
+.estado-claro{display:flex;margin:.45rem 0 .15rem;font-size:.95rem;color:var(--tinta)}
+.estado-claro.abierto::before{background:var(--wa);box-shadow:0 0 0 3px rgba(31,143,78,.16)}
+
+/* encendido del espejo */
+@media (prefers-reduced-motion:no-preference){
+  .espejo-luz{animation:encender 1.7s steps(1,end) .25s both, brillo 1.7s ease .25s both}
+  .espejo-vidrio{animation:revelar 2s ease .25s both}
+  .portada-texto>*{animation:subir .9s var(--facil) both}
+  .portada-texto>:nth-child(2){animation-delay:.08s}.portada-texto>:nth-child(3){animation-delay:.16s}
+  .portada-texto>:nth-child(4){animation-delay:.24s}.portada-texto>:nth-child(5){animation-delay:.32s}.portada-texto>:nth-child(6){animation-delay:.4s}
+}
+@keyframes encender{0%{opacity:0}9%{opacity:.85}13%{opacity:.12}21%{opacity:1}25%{opacity:.45}32%,100%{opacity:1}}
+@keyframes brillo{from{filter:brightness(.9)}to{filter:brightness(1)}}
+@keyframes revelar{0%{filter:brightness(.18) saturate(.6)}32%{filter:brightness(.62) saturate(.85)}100%{filter:none}}
+@keyframes subir{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* marcas */
+.marcas{border-bottom:1px solid var(--veta);background:var(--marmol)}
+.marcas .ancho{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.4rem 1.6rem;padding:20px 0;text-align:center}
+.marcas p{font-size:.85rem;color:var(--gris)}
+.marcas ul{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem 1.4rem;margin:0;padding:0;list-style:none;font:600 .9rem/1.3 var(--display);font-stretch:110%;letter-spacing:.02em;color:var(--carbon)}
+
+/* tramos */
+.tramo{padding:clamp(64px,10vw,116px) 0}
+.tramo-blanco{background:var(--blanco)}
+.tramo-oscuro{background:var(--carbon);color:var(--marmol)}
+.tramo-oscuro .etiqueta{color:var(--plata)}
+.titulo{font-size:clamp(2rem,6.4vw,3.4rem);margin-top:.8rem}
+.entrada{margin-top:1rem;max-width:36rem;color:var(--gris)}
+.tramo-oscuro .entrada{color:rgba(243,242,239,.78)}
+
+/* servicios */
+.servicios-grilla{display:grid;gap:40px}
+.foto-espejo{margin:28px 0 0;border-radius:var(--radio);overflow:hidden;box-shadow:0 0 0 1px var(--veta);display:none}
+.foto-espejo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.carta{margin:0;padding:0;list-style:none;border-bottom:1px solid var(--veta)}
+.carta li{display:grid;grid-template-columns:1fr auto;gap:.6rem 1.25rem;align-items:center;padding:22px 0;border-top:1px solid var(--veta)}
+.carta h3{font-size:clamp(1.22rem,3.6vw,1.5rem);font-weight:650}
+.carta p{margin-top:.35rem;color:var(--gris);font-size:.98rem;max-width:34rem}
+.carta li.carta-mas{display:block;padding:30px 0 6px}
+.carta-mas span{font:400 1.45rem/1 var(--italica);font-style:italic;color:var(--roble)}
+.marca{display:inline-block;margin-left:.5rem;padding:.28rem .55rem;border:1px solid var(--roble);border-radius:999px;font:600 .62rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--roble);vertical-align:.3em}
+.pedir{display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap;font-weight:600;font-size:.95rem;text-decoration:none;color:var(--carbon);padding:.55rem .95rem;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--veta);transition:box-shadow .2s,background .2s}
+.pedir:hover{box-shadow:inset 0 0 0 1.5px var(--carbon);background:var(--marmol)}
+.pedir svg{width:16px;height:16px}
+
+/* trabajos */
+.cabeza-fila{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem 2rem}
+.cabeza-fila a.enlace{font-weight:600;text-underline-offset:4px}
+.trabajos{display:grid;grid-auto-flow:column;grid-auto-columns:72%;gap:12px;margin-top:32px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
+.trabajos figure{margin:0;scroll-snap-align:start;border-radius:var(--radio);overflow:hidden;background:var(--veta)}
+.trabajos img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .8s var(--facil)}
+.trabajos figure:hover img{transform:scale(1.03)}
+
+/* salón */
+.salon-grilla{display:grid;gap:32px;align-items:center}
+.salon-principal{margin:0;border-radius:var(--radio);overflow:hidden}
+.salon-principal img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.salon-fila{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.salon-fila img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.salon-texto p+p{margin-top:1rem}
+
+/* opiniones */
+.puntaje-google{display:flex;align-items:center;gap:.7rem;margin-top:1rem;font-size:1rem;color:var(--gris)}
+.puntaje-google strong{font:700 1.5rem/1 var(--display);font-stretch:112%;color:var(--tinta)}
+.puntaje-google .estrellas{color:var(--roble)}
+.opiniones{display:grid;gap:14px;margin-top:36px}
+.opinion{margin:0;padding:26px 24px;border-radius:var(--radio);background:var(--blanco);box-shadow:0 0 0 1px var(--veta)}
+.opinion .estrellas{color:var(--roble);font-size:.82rem}
+.opinion p{margin-top:.7rem;font-size:1.06rem;line-height:1.55}
+.opinion footer{margin-top:1rem;font-size:.9rem;color:var(--gris)}
+
+
+/* opinar en Google */
+.opinar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;margin-top:14px;padding:26px 24px;border-radius:var(--radio);background:var(--carbon);color:var(--marmol)}
+.opinar h3{font-size:1.35rem}
+.opinar p{margin-top:.35rem;color:rgba(243,242,239,.75)}
+
+/* regalo */
+.regalo{padding:clamp(48px,8vw,80px) 0;background:#E9E7E3;border-block:1px solid var(--veta)}
+.regalo .ancho{display:grid;gap:1.2rem;align-items:center}
+.regalo h2{font-size:clamp(1.8rem,5.4vw,2.7rem)}
+.regalo p{margin-top:.6rem;color:var(--gris)}
+
+/* turnos */
+.turnos-grilla{display:grid;gap:28px}
+.tarjeta-turno{padding:clamp(24px,4vw,44px);border-radius:26px;background:var(--blanco);box-shadow:0 0 0 1px var(--veta)}
+.tarjeta-turno h2{font-size:clamp(2rem,6vw,3rem)}
+.form-turno{display:grid;gap:14px;margin-top:1.6rem}
+.form-turno .campo{display:grid;gap:.4rem}
+.form-turno label,.form-turno legend{font-size:.85rem;font-weight:600;color:var(--tinta)}
+.form-turno input,.form-turno select,.form-turno textarea{width:100%;min-width:0;padding:0 .95rem;height:50px;border-radius:12px;border:1px solid var(--veta);background:var(--marmol);color:var(--tinta);font:500 1rem var(--texto);appearance:none}
+.form-turno select{background:var(--marmol) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%235C5A5F' stroke-width='1.6'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") no-repeat right .9rem center;padding-right:2.2rem}
+.form-turno textarea{height:auto;min-height:90px;padding:.8rem .95rem;resize:vertical}
+.form-turno .dos{display:grid;gap:14px}
+.franjas{border:0;margin:0;padding:0;display:grid;gap:.5rem}
+.franjas .opciones{display:flex;flex-wrap:wrap;gap:8px}
+.franjas label{position:relative}
+.franjas input{position:absolute;opacity:0;width:1px;height:1px}
+.franjas span{display:inline-flex;align-items:center;height:42px;padding:0 1rem;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--veta);font-weight:500;cursor:pointer}
+.franjas input:checked+span{background:var(--carbon);color:var(--marmol);box-shadow:none}
+.franjas input:focus-visible+span{outline:2px solid var(--roble);outline-offset:2px}
+.form-turno .error{min-height:1.2em;font-size:.9rem;color:#A3402A}
+.info{display:grid;gap:22px;align-content:start}
+.info figure{margin:0;border-radius:var(--radio);overflow:hidden}
+.info figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.info h3{font-size:1.05rem;font-stretch:112%;letter-spacing:.01em}
+.info p,.info li{color:var(--gris)}
+.info ul{margin:.4rem 0 0;padding:0;list-style:none}
+.info li{display:flex;justify-content:space-between;gap:1rem;padding:.35rem 0;border-bottom:1px solid var(--veta)}
+.info li:last-child{border-bottom:0}
+.info .horario li.hoy{color:var(--tinta);font-weight:600}
+.info a{font-weight:600;text-underline-offset:3px}
+
+/* pie */
+.pie{background:var(--carbon-hondo);color:rgba(243,242,239,.72);padding:52px 0 96px;font-size:.95rem}
+.pie .ancho{display:grid;gap:28px}
+.pie .logo{align-items:flex-start;color:var(--marmol)}
+.pie .logo-bajada{padding-left:0}
+.pie a{color:var(--marmol);text-underline-offset:3px}
+.pie small{display:block;font-size:.8rem;color:rgba(243,242,239,.5)}
+
+/* WhatsApp flotante */
+.wa-flotante{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;align-items:center;gap:.5rem;height:56px;padding:0 1.2rem 0 1rem;border-radius:999px;background:var(--wa);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s,transform .3s var(--facil)}
+.wa-flotante.visible{opacity:1;transform:none;pointer-events:auto}
+.wa-flotante svg{width:24px;height:24px}
+
+@media (min-width:640px){
+  .trabajos{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}
+  .opiniones{grid-template-columns:1fr 1fr}
+  .form-turno .dos{grid-template-columns:1fr 1fr}
+  .regalo .ancho{grid-template-columns:1fr auto;gap:2rem}
+}
+@media (min-width:960px){
+  .menu{display:flex}
+  .portada-grilla{grid-template-columns:1.08fr .92fr;align-items:center;gap:64px;min-height:calc(100svh - 68px);padding:48px 0 64px}
+  .portada-texto{order:-1}
+  .espejo{max-width:470px;justify-self:end;width:100%}
+  .espejo-vidrio{aspect-ratio:4/5}
+  .portada h1{font-size:clamp(3.6rem,6vw,5.4rem)}
+}
+@media (min-width:1180px){
+  .pedido{grid-template-columns:1fr 1fr auto;align-items:end}
+  .pedido .boton{grid-column:auto;margin-top:0;height:50px;min-height:50px}
+}
+@media (min-width:960px){
+  .servicios-grilla{grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+  .servicios-intro{position:sticky;top:100px}
+  .foto-espejo{display:block}
+  .salon-grilla{grid-template-columns:.8fr 1.2fr;gap:64px}
+  .turnos-grilla{grid-template-columns:1.15fr .85fr;gap:48px}
+  .pie .ancho{grid-template-columns:1.2fr 1fr 1fr}
+  .pie{padding-bottom:52px}
+}
+@media (max-width:380px){
+  .pedido{grid-template-columns:1fr}
+  .carta li{grid-template-columns:1fr}
+  .carta .pedir{justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="ancho">
+    <a class="logo" href="#inicio" aria-label="Lusoan Peluquería, inicio"><span class="logo-nombre">LUSOAN</span><span class="logo-bajada">PELUQUERÍA</span></a>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#salon">El salón</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#turnos">Turnos</a>
+    </nav>
+    <a class="boton boton-claro" href="#turnos">Pedir turno</a>
+  </div>
+</header>
+
+<main>
+<section class="portada" id="inicio" aria-labelledby="titular">
+  <div class="ancho portada-grilla">
+    <div class="espejo">
+      <span class="espejo-luz" aria-hidden="true"></span>
+      <div class="espejo-vidrio" data-espejo>
+        <img class="activa" src="img/espejo-1.jpg" width="960" height="1200" fetchpriority="high" alt="Clienta con iluminación cobriza, de perfil frente a la pared con el logo de Lusoan.">
+        <img src="img/espejo-2.jpg" width="900" height="1125" loading="lazy" alt="Melena rubia con balayage, vista de espaldas en el salón.">
+        <img src="img/espejo-3.jpg" width="720" height="900" loading="lazy" alt="Corte por los hombros con las puntas hacia afuera, recién peinado.">
+      </div>
+    </div>
+    <div class="portada-texto">
+      <p class="etiqueta">Peluquería en Palermo</p>
+      <h1 id="titular">Salí como querés <span class="it">verte.</span></h1>
+      <p class="bajada">Corte, color, tratamientos, uñas y maquillaje en un mismo lugar, sobre Scalabrini Ortiz.</p>
+      <p class="puntaje"><span class="estrellas" aria-hidden="true">★★★★★</span> 4,8 en Google · 122 opiniones</p>
+      <form class="pedido" data-turno data-cta novalidate>
+        <div class="campo">
+          <label for="p-servicio">Servicio</label>
+          <select id="p-servicio" name="servicio" data-servicios required></select>
+        </div>
+        <div class="campo">
+          <label for="p-dia">Día</label>
+          <select id="p-dia" name="dia" data-dias></select>
+        </div>
+        <button class="boton boton-claro" type="submit">Pedir turno</button>
+        <p class="error" role="alert"></p>
+      </form>
+      <p class="nota"><span class="estado" data-estado hidden></span><span>Martes a sábado de 9:30 a 19 h</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="marcas" aria-label="Productos profesionales">
+  <div class="ancho">
+    <p>Trabajamos con</p>
+    <ul>
+      <li>L'Oréal Professionnel</li>
+      <li>Wella Professionals</li>
+      <li>Olaplex</li>
+      <li>Schwarzkopf Bonacure</li>
+      <li>Fidelité</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tramo" id="servicios" aria-labelledby="t-servicios">
+  <div class="ancho servicios-grilla">
+    <div class="servicios-intro">
+      <p class="etiqueta">Servicios</p>
+      <h2 class="titulo" id="t-servicios">Todo en un mismo lugar</h2>
+      <p class="entrada">Sabemos lo que necesitás y estamos para cumplirlo. Elegí qué te querés hacer y pedí tu turno por WhatsApp con el servicio ya escrito.</p>
+      <figure class="foto-espejo"><img src="img/salon-espejo-luz.jpg" width="1000" height="1250" loading="lazy" alt="Puesto de peinado con espejo iluminado y productos sobre la mesada."></figure>
+    </div>
+    <ul class="carta">
+      <li>
+        <div><h3>Corte</h3><p>Corte, brushing y peinado, con asesoramiento según tu tipo de pelo.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="corte">Pedir turno</a>
+      </li>
+      <li>
+        <div><h3>Maquillaje y peinado</h3><p>Para casamientos, fiestas y eventos. Te vas lista desde el salón.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="maquillaje y peinado">Pedir turno</a>
+      </li>
+      <li>
+        <div><h3>Color</h3><p>Color, iluminación, balayage y gray blending para integrar las canas. También henna.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="color">Pedir turno</a>
+      </li>
+      <li>
+        <div><h3>Belleza de manos y pies</h3><p>Esmaltado común, semipermanente y kapping para fortalecer la uña. Pedicuría.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="belleza de manos y pies">Pedir turno</a>
+      </li>
+      <li>
+        <div><h3>Depilación</h3><p>Con sistema descartable.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="depilación">Pedir turno</a>
+      </li>
+      <li class="carta-mas" aria-hidden="true"><span>Y mucho más</span></li>
+      <li>
+        <div><h3>Tratamientos</h3><p>Olaplex, molecular, metal detox, Nutricurls, Bonacure y Karseell. Alisado sin formol.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="un tratamiento">Pedir turno</a>
+      </li>
+      <li>
+        <div><h3>Masajes <span class="marca">Nuevo</span></h3><p>15 minutos de masaje descontracturante mientras actúa tu color, o masaje de cuerpo completo. Con turno previo.</p></div>
+        <a class="pedir" href="#turnos" data-servicio="masajes">Pedir turno</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="tramo tramo-blanco" id="trabajos" aria-labelledby="t-trabajos">
+  <div class="ancho">
+    <div class="cabeza-fila">
+      <div>
+        <p class="etiqueta">Trabajos</p>
+        <h2 class="titulo" id="t-trabajos">Hechos en Lusoan</h2>
+      </div>
+      <a class="enlace" href="https://www.instagram.com/lusoan_peluqueria/" target="_blank" rel="noopener">Ver más en Instagram</a>
+    </div>
+    <div class="trabajos">
+      <figure><img src="img/res-rubio.jpg" width="640" height="800" loading="lazy" alt="Melena rubia con ondas."></figure>
+      <figure><img src="img/res-largo.jpg" width="496" height="621" loading="lazy" alt="Pelo largo castaño con reflejos, lacio y con brillo."></figure>
+      <figure><img src="img/res-clip.jpg" width="609" height="762" loading="lazy" alt="Pelo castaño con una pinza de Lusoan."></figure>
+      <figure><img src="img/res-reflejos.jpg" width="573" height="717" loading="lazy" alt="Reflejos dorados sobre base castaña."></figure>
+      <figure><img src="img/res-unas.jpg" width="720" height="900" loading="lazy" alt="Uñas cortas esmaltadas en tono nude."></figure>
+      <figure><img src="img/res-maquillaje.jpg" width="640" height="800" loading="lazy" alt="Maquillaje para un evento, con ruleros puestos."></figure>
+    </div>
+  </div>
+</section>
+
+<section class="tramo tramo-oscuro" id="salon" aria-labelledby="t-salon">
+  <div class="ancho salon-grilla">
+    <div class="salon-texto">
+      <p class="etiqueta">El salón</p>
+      <h2 class="titulo" id="t-salon">Un salón amplio y <span class="it">tranquilo</span></h2>
+      <p class="entrada">Puestos amplios con espejos con luz, lavado con sillones reclinables y un equipo de coloristas, estilistas, manicuras y maquilladora que conoce a sus clientas hace años.</p>
+      <p class="entrada">Trabajamos con líneas profesionales y te asesoramos para que sigas el cuidado en casa: los productos se pueden llevar del salón.</p>
+    </div>
+    <div>
+      <figure class="salon-principal"><img src="img/salon-lavado-ancho.jpg" width="1600" height="1067" loading="lazy" alt="Sector de lavado con sillones negros frente a la pared con el logo de Lusoan."></figure>
+      <div class="salon-fila">
+        <img src="img/salon-puestos.jpg" width="1000" height="1250" loading="lazy" alt="Puestos de peinado con espejos y plantas.">
+        <img src="img/salon-espejos.jpg" width="1000" height="1250" loading="lazy" alt="Vista del salón con la fila de espejos.">
+        <img src="img/salon-recepcion.jpg" width="1000" height="1250" loading="lazy" alt="Recepción con el mostrador de Lusoan.">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tramo" id="opiniones" aria-labelledby="t-opiniones">
+  <div class="ancho">
+    <div class="cabeza-fila">
+      <div>
+        <p class="etiqueta">Opiniones de Google</p>
+        <h2 class="titulo" id="t-opiniones">Lo que dicen nuestras clientas</h2>
+        <p class="puntaje-google"><strong>4,8</strong><span class="estrellas" aria-hidden="true">★★★★★</span> 122 opiniones</p>
+      </div>
+      <a class="enlace" href="https://search.google.com/local/reviews?placeid=ChIJo7_Xl3u1vJURV8JsF72Vqa8" target="_blank" rel="noopener">Leer todas en Google</a>
+    </div>
+    <div class="opiniones">
+      <blockquote class="opinion">
+        <span class="estrellas" aria-label="5 de 5 estrellas">★★★★★</span>
+        <p>“Excelente servicio en un ambiente tranquilo, de los salones de antes. La atención muy amable de todos los que trabajan.”</p>
+        <footer>Anika</footer>
+      </blockquote>
+      <blockquote class="opinion">
+        <span class="estrellas" aria-label="5 de 5 estrellas">★★★★★</span>
+        <p>“Hace años que me atiendo en Lusoan y siempre es un placer volver. Se nota el profesionalismo, la dedicación y el amor por lo que hacen.”</p>
+        <footer>Florencia A.</footer>
+      </blockquote>
+      <blockquote class="opinion">
+        <span class="estrellas" aria-label="5 de 5 estrellas">★★★★★</span>
+        <p>“Fui para que me pasaran de un castaño oscuro a un rubio casi platino. Fue increíble el trato, la dedicación y el ojo al detalle.”</p>
+        <footer>Tomás D.</footer>
+      </blockquote>
+      <blockquote class="opinion">
+        <span class="estrellas" aria-label="5 de 5 estrellas">★★★★★</span>
+        <p>“Es mi peluquería desde que tengo 15 años. Siempre impecable el trabajo que han hecho.”</p>
+        <footer>Jovita Q.</footer>
+      </blockquote>
+    </div>
+    <div class="opinar">
+      <div>
+        <h3>¿Ya viniste? Contanos cómo te fue</h3>
+        <p>Tu opinión en Google nos ayuda a que más gente conozca el salón.</p>
+      </div>
+      <a class="boton boton-claro" href="https://search.google.com/local/writereview?placeid=ChIJo7_Xl3u1vJURV8JsF72Vqa8" target="_blank" rel="noopener">Opinar en Google</a>
+    </div>
+  </div>
+</section>
+
+<section class="regalo" aria-labelledby="t-regalo">
+  <div class="ancho">
+    <div>
+      <h2 id="t-regalo">Regalá un momento Lusoan</h2>
+      <p>Gift cards para cualquier servicio, armadas a tu medida. Pedila en el salón o por WhatsApp.</p>
+    </div>
+    <a class="boton" href="#" data-mensaje="Hola! Quiero una gift card de Lusoan." target="_blank" rel="noopener">Pedir una gift card</a>
+  </div>
+</section>
+
+<section class="tramo" id="turnos" aria-labelledby="t-turnos">
+  <div class="ancho turnos-grilla">
+    <div class="tarjeta-turno">
+      <p class="etiqueta">Turnos</p>
+      <h2 id="t-turnos" style="margin-top:.8rem">Pedí tu turno</h2>
+      <p class="entrada">Completá y te abrimos WhatsApp con el mensaje listo para mandar.</p>
+      <form class="form-turno" data-turno data-cta novalidate>
+        <div class="dos">
+          <div class="campo"><label for="t-nombre">Nombre</label><input id="t-nombre" name="nombre" type="text" autocomplete="given-name"></div>
+          <div class="campo"><label for="t-servicio">Servicio</label><select id="t-servicio" name="servicio" data-servicios required></select></div>
+        </div>
+        <div class="dos">
+          <div class="campo"><label for="t-dia">Día</label><select id="t-dia" name="dia" data-dias></select></div>
+          <fieldset class="franjas">
+            <legend>Horario</legend>
+            <div class="opciones">
+              <label><input type="radio" name="franja" value="a la mañana"><span>Mañana</span></label>
+              <label><input type="radio" name="franja" value="a la tarde"><span>Tarde</span></label>
+              <label><input type="radio" name="franja" value="" checked><span>Me da igual</span></label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="campo"><label for="t-comentario">Comentario <span style="font-weight:400;color:var(--gris)">(opcional)</span></label><textarea id="t-comentario" name="comentario" placeholder="Por ejemplo: quiero cubrir canas, o vengo con una foto de referencia."></textarea></div>
+        <p class="error" role="alert"></p>
+        <div><button class="boton" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Enviar por WhatsApp</button></div>
+      </form>
+    </div>
+    <div class="info">
+      <figure><img src="img/frente.jpg" width="1200" height="900" loading="lazy" alt="Frente del salón con el logo de Lusoan en la vidriera."></figure>
+      <div>
+        <h3>Dirección</h3>
+        <p>Raúl Scalabrini Ortiz 3263, Palermo, CABA<br><a href="https://www.google.com/maps/place/?q=place_id:ChIJo7_Xl3u1vJURV8JsF72Vqa8" target="_blank" rel="noopener">Cómo llegar</a></p>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <p class="estado estado-claro" data-estado hidden></p>
+        <ul class="horario" data-horario>
+          <li data-dia="1"><span>Lunes</span><span>Cerrado</span></li>
+          <li data-dia="2"><span>Martes</span><span>9:30 a 19 h</span></li>
+          <li data-dia="3"><span>Miércoles</span><span>9:30 a 19 h</span></li>
+          <li data-dia="4"><span>Jueves</span><span>9:30 a 19 h</span></li>
+          <li data-dia="5"><span>Viernes</span><span>9:30 a 19 h</span></li>
+          <li data-dia="6"><span>Sábado</span><span>9:30 a 19 h</span></li>
+          <li data-dia="0"><span>Domingo</span><span>Cerrado</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p>WhatsApp <a href="#" data-mensaje="Hola! Quiero hacer una consulta." target="_blank" rel="noopener">11 2538-6748</a><br>Teléfono <a href="tel:+541148016008">4801-6008</a><br>Instagram <a href="https://www.instagram.com/lusoan_peluqueria/" target="_blank" rel="noopener">@lusoan_peluqueria</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="ancho">
+    <div>
+      <a class="logo" href="#inicio" aria-label="Lusoan Peluquería, inicio"><span class="logo-nombre">LUSOAN</span><span class="logo-bajada">PELUQUERÍA</span></a>
+      <p style="margin-top:1rem">Peluquería en Palermo. Corte, color, tratamientos, uñas, maquillaje y masajes.</p>
+    </div>
+    <p>Raúl Scalabrini Ortiz 3263, CABA<br>Martes a sábado de 9:30 a 19 h<br>WhatsApp <a href="#" data-mensaje="Hola! Quiero hacer una consulta." target="_blank" rel="noopener">11 2538-6748</a> · Tel. <a href="tel:+541148016008">4801-6008</a></p>
+    <div>
+      <p><a href="https://www.instagram.com/lusoan_peluqueria/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.google.com/maps/place/?q=place_id:ChIJo7_Xl3u1vJURV8JsF72Vqa8" target="_blank" rel="noopener">Google Maps</a></p>
+      <small style="margin-top:1rem">Fotos: Lusoan Peluquería. © 2026 Lusoan Peluquería.</small>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-flotante" href="#" data-mensaje="Hola! Quiero pedir un turno." target="_blank" rel="noopener" aria-label="Pedir turno por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Turnos</a>
+
+<script>
+/* ===== Configuración ===== */
+const WHATSAPP = "5491125386748";
+
+const SERVICIOS = ["Corte", "Maquillaje y peinado", "Color", "Belleza de manos y pies", "Depilación", "Tratamiento", "Alisado sin formol", "Masajes"];
+const NOMBRES_DIA = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+const ABRE = 9 * 60 + 30, CIERRA = 19 * 60;          // martes a sábado, 9:30 a 19 h
+const abreElDia = d => d >= 2 && d <= 6;
+const ahoraBA = () => {                               // día y minuto actuales en Buenos Aires
+  try {
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: "America/Argentina/Buenos_Aires", weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date()).map(x => [x.type, x.value]));
+    return { dia: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday), min: (+p.hour % 24) * 60 + (+p.minute) };
+  } catch (e) { const d = new Date(); return { dia: d.getDay(), min: d.getHours() * 60 + d.getMinutes() }; }
+};
+
+const wa = texto => "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(texto);
+const abrir = url => { const v = window.open(url, "_blank", "noopener"); if (!v) location.href = url; };
+
+/* Servicios y días disponibles (martes a sábado) */
+document.querySelectorAll("[data-servicios]").forEach(sel => {
+  sel.add(new Option("Elegí un servicio", ""));
+  SERVICIOS.forEach(s => sel.add(new Option(s, s.toLowerCase())));
+});
+(function () {
+  const dias = [];
+  const d = new Date(); d.setHours(0, 0, 0, 0);
+  while (dias.length < 12) {
+    d.setDate(d.getDate() + 1);
+    const w = d.getDay();
+    if (w >= 2 && w <= 6) {
+      const nombre = NOMBRES_DIA[w];
+      dias.push({ valor: "el " + nombre + " " + d.getDate() + "/" + (d.getMonth() + 1), texto: nombre.charAt(0).toUpperCase() + nombre.slice(1) + " " + d.getDate() + "/" + (d.getMonth() + 1) });
+    }
+  }
+  const ba = ahoraBA();
+  const hoyAbierto = abreElDia(ba.dia) && ba.min < CIERRA - 90;
+  document.querySelectorAll("[data-dias]").forEach(sel => {
+    sel.add(new Option("Lo antes posible", "lo antes posible"));
+    if (hoyAbierto) sel.add(new Option("Hoy", "hoy"));
+    dias.forEach(x => sel.add(new Option(x.texto, x.valor)));
+  });
+})();
+
+/* Abierto ahora / cerrado, y el día de hoy marcado en el horario */
+(function () {
+  const { dia, min } = ahoraBA();
+  let texto, abierto = false;
+  if (abreElDia(dia) && min >= ABRE && min < CIERRA) { abierto = true; texto = "Abierto ahora, hasta las 19 h"; }
+  else if (abreElDia(dia) && min < ABRE) texto = "Cerrado ahora, abrimos hoy a las 9:30";
+  else {
+    let n = 1; while (!abreElDia((dia + n) % 7)) n++;
+    texto = "Cerrado ahora, abrimos " + (n === 1 ? "mañana" : "el " + NOMBRES_DIA[(dia + n) % 7]) + " a las 9:30";
+  }
+  document.querySelectorAll("[data-estado]").forEach(el => { el.textContent = texto; el.classList.toggle("abierto", abierto); el.hidden = false; });
+  const hoy = document.querySelector('[data-horario] [data-dia="' + dia + '"]');
+  if (hoy) { hoy.classList.add("hoy"); hoy.setAttribute("aria-current", "date"); }
+})();
+
+/* Enlaces de WhatsApp con mensaje armado */
+document.querySelectorAll("[data-mensaje]").forEach(a => {
+  const armar = () => a.href = wa(a.dataset.mensaje);
+  armar(); a.addEventListener("click", armar);
+});
+document.querySelectorAll("[data-servicio]").forEach(a => {
+  const armar = () => a.href = wa("Hola! Quiero pedir un turno para " + a.dataset.servicio + ".");
+  armar(); a.target = "_blank"; a.rel = "noopener"; a.addEventListener("click", armar);
+});
+
+/* Formularios de turno */
+document.querySelectorAll("form[data-turno]").forEach(form => {
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const f = new FormData(form);
+    const error = form.querySelector(".error");
+    const servicio = f.get("servicio");
+    if (!servicio) { error.textContent = "Elegí un servicio para pedir el turno."; form.querySelector("[name=servicio]").focus(); return; }
+    error.textContent = "";
+    const nombre = (f.get("nombre") || "").trim();
+    let texto = "Hola!" + (nombre ? " Soy " + nombre + "." : "") + " Quiero pedir un turno para " + servicio + ", " + f.get("dia");
+    const franja = f.get("franja");
+    texto += (franja ? " " + franja : "") + ".";
+    const comentario = (f.get("comentario") || "").trim();
+    if (comentario) texto += " " + comentario;
+    abrir(wa(texto));
+  });
+});
+
+/* Espejo: rota los trabajos */
+(function () {
+  const fotos = [...document.querySelectorAll("[data-espejo] img")];
+  if (fotos.length < 2 || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  let i = 0;
+  setInterval(() => {
+    if (document.hidden) return;
+    fotos[i].classList.remove("activa");
+    i = (i + 1) % fotos.length;
+    fotos[i].classList.add("activa");
+  }, 5200);
+})();
+
+/* WhatsApp flotante: aparece cuando no se ve ningún formulario de turno */
+(function () {
+  const boton = document.querySelector(".wa-flotante");
+  const visibles = new Set();
+  const io = new IntersectionObserver(entradas => {
+    entradas.forEach(en => en.isIntersecting ? visibles.add(en.target) : visibles.delete(en.target));
+    boton.classList.toggle("visible", visibles.size === 0);
+  });
+  document.querySelectorAll("[data-cta]").forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
