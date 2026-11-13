@@ -4,3 +4,7 @@ prompts/
 sheets/
 .claude/
 propuesta/
+.vercel/
+.vercelignore
+
+.vercel
