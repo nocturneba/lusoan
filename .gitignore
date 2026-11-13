@@ -2,12 +2,7 @@ fotos/
 assets/
 prompts/
 sheets/
-.claude/
 propuesta/
+.claude/
 .vercel/
-.vercelignore
-
-.vercel
 .wrangler/
-wrangler.jsonc
-.assetsignore

@@ -1,0 +1,10 @@
+fotos/
+assets/
+prompts/
+sheets/
+propuesta/
+.claude/
+.wrangler/
+wrangler.jsonc
+.assetsignore
+.gitignore

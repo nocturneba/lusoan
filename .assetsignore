@@ -1,0 +1,13 @@
+fotos/
+assets/
+prompts/
+sheets/
+propuesta/
+.git/
+.vercel/
+.wrangler/
+.claude/
+wrangler.jsonc
+.assetsignore
+.vercelignore
+.gitignore
