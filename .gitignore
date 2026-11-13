@@ -8,3 +8,6 @@ propuesta/
 .vercelignore
 
 .vercel
+.wrangler/
+wrangler.jsonc
+.assetsignore
